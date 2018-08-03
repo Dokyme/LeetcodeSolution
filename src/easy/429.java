@@ -25,6 +25,9 @@ class Solution {
             List<Integer> li=new ArrayList();
             for(int i=0;i<size;i++){
                 Node n=buf.poll();
+
+
+                
                 li.add(n.val);
                 for(Node ch:n.children){
                     buf.offer(ch);
